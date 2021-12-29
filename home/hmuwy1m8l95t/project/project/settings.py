@@ -23,6 +23,7 @@ SECRET_KEY = 'django-insecure-z9y#zj-bdmyixl(74#=t9tp4cd36=104j-sa6z3818@(%dv&mj
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# hi ya hossam  3333
 # hi ya hossam 29-12-2021 9:18 am
 ALLOWED_HOSTS = ['project.hossamweb.com', 'www.project.hossamweb.com']
 
@@ -36,20 +37,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'subdomains',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'subdomains.middleware.SubdomainURLRoutingMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-# hossam
+
 ROOT_URLCONF = 'project.urls'
 
 TEMPLATES = [
