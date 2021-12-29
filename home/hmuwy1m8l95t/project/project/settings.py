@@ -23,7 +23,7 @@ SECRET_KEY = 'django-insecure-z9y#zj-bdmyixl(74#=t9tp4cd36=104j-sa6z3818@(%dv&mj
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-# hi ya hossam
+# hi ya hossam 29-12-2021 9:18 am
 ALLOWED_HOSTS = ['project.hossamweb.com', 'www.project.hossamweb.com']
 
 # Application definition
