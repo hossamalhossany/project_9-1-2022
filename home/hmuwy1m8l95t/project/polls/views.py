@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
+from rest_framework import routers
+
+# router = routers.DefaultRouter.register(r'page2', vipage2)
 
 
 def index(request):
