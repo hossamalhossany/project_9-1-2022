@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # 'django_hosts.middleware.HostsResponseMiddleware',
 ]
-
+# date 2-1-2022 - from work
 ROOT_URLCONF = 'project.urls'
 # ROOT_HOSTCONF = 'project.hosts'
 DEFAULT_HOST = 'www'
