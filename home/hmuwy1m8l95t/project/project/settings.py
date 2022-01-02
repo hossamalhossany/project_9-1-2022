@@ -24,7 +24,6 @@ SECRET_KEY = 'django-insecure-z9y#zj-bdmyixl(74#=t9tp4cd36=104j-sa6z3818@(%dv&mj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# hi ya hossam 29-12-2021 9:18 am
 ALLOWED_HOSTS = ['project.hossamweb.com', 'www.project.hossamweb.com']
 
 # Application definition
@@ -37,11 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_hosts',
+    'polls',
 ]
 
 MIDDLEWARE = [
-    # 'django_hosts.middleware.HostsRequestMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -49,11 +47,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'django_hosts.middleware.HostsResponseMiddleware',
 ]
-# date 2-1-2022 - from work
+
 ROOT_URLCONF = 'project.urls'
-# ROOT_HOSTCONF = 'project.hosts'
 DEFAULT_HOST = 'www'
 
 TEMPLATES = [
@@ -118,12 +114,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
-
-MEDIA_URL = '/media/'
-STATICFILES_DIRS = [BASE_DIR, 'static']
-MEDIA_ROOT = 'home/hmuwy1m8l95t/project/media'
-STATIC_ROOT = 'home/hmuwy1m8l95t/project/static'
+# STATIC_URL = '/static/'
+#
+# MEDIA_URL = '/media/'
+# STATICFILES_DIRS = [BASE_DIR, 'static']
+# MEDIA_ROOT = 'home/hmuwy1m8l95t/project/media'
+# STATIC_ROOT = 'home/hmuwy1m8l95t/project/static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

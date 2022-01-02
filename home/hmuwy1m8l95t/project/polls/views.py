@@ -1,8 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
 from rest_framework import routers
-
-# router = routers.DefaultRouter.register(r'page2', vipage2)
 
 
 def index(request):
@@ -10,7 +7,6 @@ def index(request):
     return render(request, html_file)
 
 
-def page2():
+def page2(request):
     html_file = 'polls/page2.html'
-    return HttpResponseRedirect(html_file)
-    # return render(request, html_file)
+    return render(request, html_file)
