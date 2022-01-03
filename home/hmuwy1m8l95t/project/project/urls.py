@@ -21,6 +21,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('', include('polls.urls')),
-    path('page2/', include('polls.urls')),
+    # path(r'^page2/', include('polls.urls')),
 
 ]
