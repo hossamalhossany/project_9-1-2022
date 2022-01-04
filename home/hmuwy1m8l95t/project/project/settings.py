@@ -25,20 +25,19 @@ SECRET_KEY = 'django-insecure-z9y#zj-bdmyixl(74#=t9tp4cd36=104j-sa6z3818@(%dv&mj
 DEBUG = True
 
 ALLOWED_HOSTS = ['project.hossamweb.com', 'www.project.hossamweb.com']
-# ALLOWED_HOSTS = ['92.205.4.113']
+
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    # 'polls.apps.PollsConfig',
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls',
 ]
 
 MIDDLEWARE = [

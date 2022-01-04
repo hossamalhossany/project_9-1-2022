@@ -16,11 +16,6 @@ Including another URLconf
 
 from django.urls import path, include
 
-# from .project.polls import views
-# from home.hmuwy1m8l95t.project.polls import views
-
 urlpatterns = [
     path('', include('polls.urls')),
-    # path(r'^page2/', include('polls.urls')),
-
 ]
