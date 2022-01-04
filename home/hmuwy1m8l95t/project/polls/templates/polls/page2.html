@@ -6,14 +6,19 @@
 </head>
 <body>
 <h1>page 2</h1>
-aaaaaaaaaaaaaaaaaaaaa<br>
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
 
-aaaaaaaaaaaaaaaaaaaaa<br>
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
 
+
+
+    <div>
+        <form method="POST" action="put_data_to_databasa">
+            <h1>
+                {% csrf_token %}
+                {{ contact_form.as_p }}
+                <input type="submit" value="save" >
+            </h1>
+        </form>
+    </div>
 
 <a href="page3/" >page3</a>
 
