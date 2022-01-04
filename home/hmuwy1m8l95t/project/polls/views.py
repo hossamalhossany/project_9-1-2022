@@ -9,3 +9,8 @@ def index(request):
 def page2(request):
     html_file = 'polls/page2.html'
     return render(request, html_file)
+
+
+def page3(request):
+    html_file = 'polls/page3.html'
+    return render(request, html_file)
