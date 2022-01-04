@@ -26,8 +26,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['project.hossamweb.com', 'www.project.hossamweb.com']
 
-
-
 # Application definition
 
 INSTALLED_APPS = [
