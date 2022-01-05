@@ -2,7 +2,7 @@ from django.db import connection
 from django.shortcuts import render
 from .models import test1
 from .forms import contact_form
-
+import learn_python.lesson1
 
 def index(request):
     html_file = 'polls/index.html'
@@ -31,3 +31,8 @@ def put_data_to_databasa(request):
     html_page = "polls/page2.html"
     return render(request, html_page, {'rows': rows})
 
+
+def learn_python(request):
+    learn_python.lesson1.hello()
+    html_file = "polls/learn_python.html"
+    return render(request, html_file)
