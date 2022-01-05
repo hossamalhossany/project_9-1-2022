@@ -2,7 +2,8 @@ from django.db import connection
 from django.shortcuts import render
 from .models import test1
 from .forms import contact_form
-import learn_python.lesson1
+from .learn_python.lesson1 import hello
+
 
 def index(request):
     html_file = 'polls/index.html'
@@ -33,6 +34,8 @@ def put_data_to_databasa(request):
 
 
 def learn_python(request):
-    learn_python.lesson1.hello()
+    data_learn = hello()
+    data_learn2 = {'data_learn': data_learn}
+
     html_file = "polls/learn_python.html"
-    return render(request, html_file)
+    return render(request, html_file, data_learn2)
