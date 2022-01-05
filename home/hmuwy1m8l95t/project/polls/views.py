@@ -25,9 +25,9 @@ def put_data_to_databasa(request):
     test.last_name = request.POST.get('last_name')
     test.save()
     with connection.cursor() as cursor:
-        sql = ''' select * from mydb2.myapp_test1 '''
+        sql = ''' select * from project_db.polls_test1 '''
         cursor.execute(sql)
         rows = cursor.fetchall()
-    html_page = "myapp/index.html"
+    html_page = "polls/page2.html"
     return render(request, html_page, {'rows': rows})
 
