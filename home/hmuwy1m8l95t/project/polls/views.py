@@ -3,7 +3,7 @@ from django.shortcuts import render
 from .models import test1
 from .forms import contact_form
 from .learn_python.lesson1 import hello
-# hi this wednesday 5/1/2022
+# hi this wednesday 8/1/2022
 
 def index(request):
     html_file = 'polls/index.html'
