@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-# hi i hossam at 9-1-2022 2:22 PM
+# hi i hossam at 9-1-2022 2:23 PM
 import os.path
 from pathlib import Path
 
